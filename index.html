@@ -29,7 +29,6 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* Navigation Header */
         nav {
             position: fixed;
             top: 0;
@@ -76,7 +75,6 @@
             padding: 120px 20px 40px 20px;
         }
 
-        /* Hero Section */
         header {
             text-align: center;
             padding: 50px 0 30px 0;
@@ -145,7 +143,6 @@
             padding-bottom: 10px;
         }
 
-        /* Skills Grid */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -157,21 +154,12 @@
             padding: 22px;
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(56, 189, 248, 0.4);
         }
 
         .skill-card h3 {
             font-size: 1.1rem;
             margin-bottom: 12px;
             color: #818cf8;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         .skill-card ul {
@@ -182,12 +170,8 @@
             margin-bottom: 8px;
             color: #cbd5e1;
             font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
-        /* Projects Section */
         .project-card {
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid rgba(255, 255, 255, 0.05);
@@ -196,24 +180,10 @@
             margin-bottom: 25px;
         }
 
-        .project-card:last-child {
-            margin-bottom: 0;
-        }
-
         .project-card h3 {
             font-size: 1.2rem;
             color: #f1f5f9;
             margin-bottom: 8px;
-        }
-
-        .project-card p {
-            color: #94a3b8;
-            font-size: 0.95rem;
-            margin-bottom: 12px;
-        }
-
-        .project-details {
-            margin-bottom: 15px;
         }
 
         .project-details li {
@@ -228,6 +198,7 @@
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
+            margin-top: 12px;
         }
 
         .tech-tag {
@@ -239,7 +210,6 @@
             font-weight: 500;
         }
 
-        /* Services Section */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -271,15 +241,8 @@
             color: #94a3b8;
         }
 
-        /* Contact & Footer */
         .contact-content {
             text-align: center;
-        }
-
-        .contact-content p {
-            color: #cbd5e1;
-            margin-bottom: 20px;
-            font-size: 1.05rem;
         }
 
         .social-links {
@@ -294,15 +257,12 @@
             margin: 0 6px;
             border-radius: 30px;
             text-decoration: none;
-            transition: all 0.3s ease;
             display: inline-block;
         }
 
         .social-links a:hover {
             background: #38bdf8;
             color: #0f172a;
-            border-color: #38bdf8;
-            transform: translateY(-3px);
         }
 
         footer {
@@ -313,17 +273,10 @@
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             margin-top: 20px;
         }
-
-        @media (max-width: 768px) {
-            nav { padding: 15px 20px; }
-            .nav-links { display: none; }
-            header h1 { font-size: 2.3rem; }
-        }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Header -->
     <nav>
         <a href="#" class="nav-logo">Mohamed Ali</a>
         <ul class="nav-links">
@@ -336,7 +289,6 @@
     </nav>
 
     <div class="container">
-        <!-- Hero Section -->
         <header>
             <h1>Mohamed Ali</h1>
             <p class="title">Software Quality Assurance (QA) & Automation Engineer</p>
@@ -346,125 +298,112 @@
             <a href="#contact" class="btn-primary">Get in Touch</a>
         </header>
 
-        <!-- About Me -->
         <section id="about">
             <h2>About Me</h2>
-            <p style="color: #cbd5e1; line-height: 1.8;">
-                Detail-oriented Software Quality Assurance Engineer specialized in building robust software testing pipelines. Passionate about bridging the gap between development teams and end-users by enforcing high software standards, minimizing defect leakages, and ensuring seamless functional and automated performance across multiple digital environments.
-            </p>
+            <p>Detail-oriented Software Quality Assurance Engineer specialized in building robust software testing pipelines. Passionate about bridging the gap between development teams and end-users by enforcing high software standards and ensuring seamless functional and automated performance.</p>
         </section>
 
-        <!-- Core Skills & Tools Grid -->
         <section id="skills">
             <h2>Core Skills & Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3><i class="fas fa-clipboard-check"></i> Manual Testing</h3>
+                    <h3>Manual Testing</h3>
                     <ul>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Test Scenarios & Cases Design</li>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Functional & Regression Testing</li>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Smoke & Sanity Testing</li>
+                        <li>✔ Test Scenarios & Cases Design</li>
+                        <li>✔ Functional & Regression Testing</li>
+                        <li>✔ Smoke & Sanity Testing</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3><i class="fas fa-robot"></i> Automation Testing</h3>
+                    <h3>Automation Testing</h3>
                     <ul>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Selenium WebDriver Framework</li>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Java Programming (OOP Principles)</li>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Automated Script Execution</li>
+                        <li>✔ Selenium WebDriver Framework</li>
+                        <li>✔ Java Programming (OOP)</li>
+                        <li>✔ Automated Script Execution</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3><i class="fas fa-network-wired"></i> API Testing</h3>
+                    <h3>API Testing</h3>
                     <ul>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Postman Endpoint Validation</li>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Request & Response Verification</li>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> JSON Payloads Analysis</li>
+                        <li>✔ Postman Endpoint Validation</li>
+                        <li>✔ Request & Response Verification</li>
+                        <li>✔ JSON Payloads Analysis</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3><i class="fas fa-tools"></i> Tools & Ecosystem</h3>
+                    <h3>Tools & Ecosystem</h3>
                     <ul>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Jira (Defect & Issue Tracking)</li>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> IntelliJ IDEA & GitHub</li>
-                        <li><i class="fas fa-check" style="color:#38bdf8; font-size:11px;"></i> Agile / Scrum Workflow</li>
+                        <li>✔ Jira (Defect Tracking)</li>
+                        <li>✔ IntelliJ IDEA & GitHub</li>
+                        <li>✔ Agile / Scrum Workflow</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Projects -->
         <section id="projects">
             <h2>Featured Projects</h2>
-            
             <div class="project-card">
                 <h3>Human Resource Management System (HRMS) Prototype</h3>
-                <p>A comprehensive system verification project focused on corporate workflow integrity and security control.</p>
                 <ul class="project-details">
                     <li>Designed structured positive and negative test cases covering user permissions.</li>
                     <li>Evaluated role-based access control (RBAC) configurations thoroughly.</li>
-                    <li>Tracked and reported defects systematically using Jira to maintain zero critical failures.</li>
+                    <li>Tracked and reported defects systematically using Jira.</li>
                 </ul>
                 <div class="tech-tags">
                     <span class="tech-tag">Manual Testing</span>
                     <span class="tech-tag">Jira</span>
-                    <span class="tech-tag">Test Management</span>
                 </div>
             </div>
-
-            <div class="project-card" style="margin-top: 25px;">
+            <div class="project-card">
                 <h3>Employee Management System (Console Application)</h3>
-                <p>Backend business logic and multi-stage verification project built to ensure stable data structures.</p>
                 <ul class="project-details">
-                    <li>Developed and structured multi-stage execution workflows using Java.</li>
+                    <li>Developed multi-stage execution workflows using Java.</li>
                     <li>Performed rigorous input validation and error handling test cases.</li>
-                    <li>Managed source code versions efficiently via IntelliJ IDEA and GitHub.</li>
+                    <li>Managed code versions via IntelliJ IDEA and GitHub.</li>
                 </ul>
                 <div class="tech-tags">
                     <span class="tech-tag">Java</span>
-                    <span class="tech-tag">Backend Validation</span>
+                    <span class="tech-tag">Selenium</span>
                     <span class="tech-tag">IntelliJ IDEA</span>
-                    <span class="tech-tag">GitHub</span>
                 </div>
             </div>
         </section>
 
-        <!-- Services Offered -->
         <section id="services">
             <h2>Services Offered</h2>
             <div class="services-grid">
                 <div class="service-box">
                     <i class="fas fa-search-plus"></i>
                     <h3>Manual & Functional</h3>
-                    <p>Rigorous verification of user interfaces, user flows, and functional specifications.</p>
+                    <p>Rigorous verification of user interfaces and requirements.</p>
                 </div>
                 <div class="service-box">
                     <i class="fas fa-exchange-alt"></i>
                     <h3>API Validation</h3>
-                    <p>Testing server responses, status codes, and endpoints security via Postman.</p>
+                    <p>Testing server responses and endpoints via Postman.</p>
                 </div>
                 <div class="service-box">
                     <i class="fas fa-cogs"></i>
                     <h3>Test Automation</h3>
-                    <p>Building reliable UI automated testing suites using Java and Selenium.</p>
+                    <p>Building reliable UI automated suites using Java and Selenium.</p>
                 </div>
                 <div class="service-box">
                     <i class="fas fa-bug"></i>
                     <h3>Bug Tracking & QA</h3>
-                    <p>Managing issue life-cycles, writing clear bug reports, and tracking fixes in Jira.</p>
+                    <p>Managing issue lifecycles and reporting bugs in Jira.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Contact & Footer Section -->
-        <section id="contact" style="margin-bottom: 0;">
+        <section id="contact">
             <h2>Let's Collaborate</h2>
             <div class="contact-content">
-                <p>Ready to enhance your software quality and deliver a seamless experience to your users? Get in touch!</p>
+                <p>Ready to enhance your software quality? Get in touch!</p>
                 <div class="social-links">
-                    <a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="mailto:your-email@example.com">Email</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://github.com" target="_blank">GitHub</a>
                 </div>
             </div>
         </section>
